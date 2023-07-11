@@ -16,8 +16,13 @@ BTN_INPUT.addEventListener('click', function getData() {
   const CELLS_NUMBER = parseInt(DIFFICULTY_SELECTION.value);
   //TEST NUMEBR OF CELLS
   console.log(`The number of cells is: ${CELLS_NUMBER}`);
+
+  const gridList = createGrid(USER_CHOICE);
+  //TEST
+  console.log(`grisList: ${gridList}`);
 })
 
+//----------
 //Per fare questo esercizio mi è stato d'obbligo riguardare la lezione registrata e,
 //cercando di capire ogni passaggio, copiarlo. Per questo l'uguaglianza con l'esercizio
 //fatto da Florian. Spero di capirlo sufficientemente
@@ -43,7 +48,12 @@ function createSingleSquare(squareContent) {  //capire il paramentro. aspettiamo
  * @param {number} squaresNumber
  */
 function createGrid(squaresNumber) {
+  const grid = [];
+
   for (i = 0; i < squaresNumber; i++) {
-    createSingleSquare('sqr' + i);
+    const newSquare = createSingleSquare('sqr' + i);
+    grid.push(newSquare);
   }
+
+  return grid;  //array di HTMLDivElements
 }
