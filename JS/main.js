@@ -57,3 +57,16 @@ function createGrid(squaresNumber) {
 
   return grid;  //array di HTMLDivElements
 }
+
+/**
+ * @param {HTMLElement} container //perchè element e non HTMLDivElement?
+ * @param {HTMLDivElement[]} squaresList
+ */
+function printGrid(container, squaresList) {
+
+}
+
+/*
+    funzione printGrid
+      perchè element e non divelement?
+*/
