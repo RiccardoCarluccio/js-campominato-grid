@@ -22,11 +22,28 @@ BTN_INPUT.addEventListener('click', function getData() {
 //cercando di capire ogni passaggio, copiarlo. Per questo l'uguaglianza con l'esercizio
 //fatto da Florian. Spero di capirlo sufficientemente
 
+//funzione per creare una singola cella
+/**
+ * 
+ * @param {string} squareContent 
+ * @returns {HTMLDivElement}
+ */
 function createSingleSquare(squareContent) {  //capire il paramentro. aspettiamo il richiamo della funzione
   const square = document.createElement('div');
 
   square.classList.add('grid-square');
   square.textContent = (squareContent);
 
-  return square;  //cioè ritorna un div?
+  return square;  //capire cosa vuol dire far ritornare un "div"
+}
+
+//funzione per creare la griglia
+//richiama la funzione createSingleSquare e la ripete tante volte quanto il numero di celle impostato
+/**
+ * @param {number} squaresNumber
+ */
+function createGrid(squaresNumber) {
+  for (i = 0; i < squaresNumber; i++) {
+    createSingleSquare('sqr' + i);
+  }
 }
