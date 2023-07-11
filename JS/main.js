@@ -12,4 +12,8 @@ BTN_INPUT.addEventListener('click', function getData() {
   } else {
     console.log('Difficulty selected: 3');
   }
+
+  const CELLS_NUMBER = parseInt(DIFFICULTY_SELECTION.value);
+  //TEST
+  console.log(`Select passed value is: ${CELLS_NUMBER}`);
 })
