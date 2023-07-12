@@ -63,7 +63,9 @@ function createGrid(squaresNumber) {
  * @param {HTMLDivElement[]} squaresList
  */
 function printGrid(container, squaresList) {
-
+  for (i = 0; i < squaresList,length; i++) {
+    
+  }
 }
 
 /*
